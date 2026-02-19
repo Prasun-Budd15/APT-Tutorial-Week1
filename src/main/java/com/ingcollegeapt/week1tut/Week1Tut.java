@@ -1,12 +1,9 @@
 package com.ingcollegeapt.week1tut;
 
-
 import com.ingcollegeapt.week1tut.model.Topic;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
-
-
 
 public class Week1Tut{
 
@@ -31,7 +28,7 @@ public class Week1Tut{
                 case "2":
                     // TODO: View topics
                     for (Topic topic : topics){
-                        System.out.println("ID : " + topic.getTopic_id() + ", Name: " + topic.getTopic_name());
+                        System.out.println("ID : " + topic.getTopic_id() + ", Name: " + topic.getTopic_name() +"Created: " +topic.getCreatedAt() +"Updated: " +topic.getUpdatedAt());
                     }
                     break;
                 case "3":
