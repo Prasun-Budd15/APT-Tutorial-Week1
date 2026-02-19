@@ -27,10 +27,17 @@ public class Week1Tut{
                     break;
                 case "2":
                     // TODO: View topics
-                    for (Topic topic : topics){
-                        System.out.println("ID : " + topic.getTopic_id() + ", Name: " + topic.getTopic_name() +"Created: " +topic.getCreatedAt() +"Updated: " +topic.getUpdatedAt());
+                        if(topics.isEmpty()){
+                        System.out.println("No Topic recorded");
                     }
+                        else{
+                    for (Topic topic : topics){
+                        System.out.println("------------ xTOPICx ------------------");
+                        System.out.println("ID      : " + topic.getTopic_id() + "\nName    : " + topic.getTopic_name() +"\nCreated : " +topic.getCreatedAt() +"\nUpdated : " +topic.getUpdatedAt());
+                    }
+                        System.out.println("*******************--*******************");
                     break;
+                        }
                 case "3":
                     // TODO: Add entry to a topic
                     break;
